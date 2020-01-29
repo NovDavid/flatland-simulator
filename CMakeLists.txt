@@ -6,3 +6,4 @@ set(CMAKE_CXX_STANDARD 11)
 set(SOURCE ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp)
 
 add_executable(${CMAKE_PROJECT_NAME} ${SOURCE})
+target_link_libraries(${CMAKE_PROJECT_NAME} curses)
