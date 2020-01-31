@@ -9,19 +9,13 @@ public:
     /* Read 1 character without echo */
     char getch();
     
-    /* Read 1 character with echo */
-    char getche();
-    
 private:
     
     /* Initialize new terminal i/o settings */
-    void initTermios(int echo);
+    void initTermios();
     
     /* Restore old terminal i/o settings */
-    void resetTermios(void);
-    
-    /* Read 1 character - echo defines echo mode */
-    char getch_(int echo);
+    void resetTermios();
     
     termios old, current;
 };
